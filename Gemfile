@@ -11,6 +11,7 @@ gem 'angular-rails'
 gem "mysql2", "~> 0.3.11"
 
 gem "unicorn"
+gem "sqlite3"
 gem "foreman"
 gem "faraday", "~> 0.8.4"
 gem "faraday_middleware", "~> 0.8.8"

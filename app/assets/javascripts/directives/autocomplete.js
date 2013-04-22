@@ -15,7 +15,8 @@ app.directive("tdAutocomplete", ["$http", function ($http) {
 
       element.typeahead({
         source: query,
-        minLength: 3
+        minLength: 3,
+        items: 200
       });
 
       function read() {

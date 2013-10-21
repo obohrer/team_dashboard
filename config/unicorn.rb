@@ -2,7 +2,7 @@
 worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
 preload_app true
 timeout 30
-listen Integer(ENV["PORT"] || 3000)
+listen (ENV["HOST"] || "127.0.0.1") + ":" + Integer(ENV["PORT"] || 3000).to_s
 
 after_fork do |server, worker|
 
